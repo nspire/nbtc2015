@@ -9,9 +9,6 @@
  */
 angular.module('nbtc2015App')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    // sliding navigation animation config
+    $scope.pageClass = 'page-home';
   });
