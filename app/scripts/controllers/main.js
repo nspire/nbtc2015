@@ -9,6 +9,4 @@
  */
 angular.module('nbtc2015App')
   .controller('MainCtrl', function ($scope) {
-    // sliding navigation animation config
-    $scope.pageClass = 'page-home';
   });

@@ -30,6 +30,17 @@ angular.module('nbtc2015App')
             }
           }
         );
+      },
+      oppositeUtil: function (direction) {
+        // return opposite direction as a string
+        var opposite;
+        switch (direction) {
+          case 'up': opposite = 'down'; break;
+          case 'down': opposite = 'up'; break;
+          case 'left': opposite = 'right'; break;
+          case 'right': opposite = 'left'; break;
+        }
+        return opposite;
       }
     };
 

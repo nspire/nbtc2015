@@ -24,7 +24,9 @@ angular.module('nbtc2015App')
         element.addClass('go-' + scope.slide);
 
         // enable any tooltips
-        element.tooltip();
+        element.tooltip({
+          placement: slideService.oppositeUtil(scope.slide)
+        });
       }
     };
   });
