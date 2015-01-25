@@ -40,6 +40,17 @@ $montserrat: 'Montserrat', 'Helvetica Neue', sans-serif;
   i { vertical-align: middle; }
   @include transition(0.08s);
 }
+@mixin white-link {
+  color: #fff;
+  @include primary-style;
+  @include transition(0.08s);
+  &:hover {
+    color: $logo-blue;
+  }
+  &:active {
+    color: lighten($main-blue, 10%);
+  }
+}
 
 // borders
 $blue-border: 8px solid $light-blue;
@@ -88,6 +99,9 @@ h1, h2, h3, h4, h5, h6 {
       @include primary-style;
       .datetime, .location {
         margin: 2.5rem 0;
+        a {
+          @include white-link;
+        }
       }
       span {
         display: inline-block;
@@ -187,16 +201,7 @@ h1, h2, h3, h4, h5, h6 {
       display: flex;
       margin-top: 8rem;
       .contact-email {
-        color: #fff;
-        @include primary-style;
-        @include transition(0.08s);
-        &:hover {
-          color: $logo-blue;
-        }
-        &:active {
-          color: lighten($main-blue, 10%);
-        }
-        // @include button-style;
+        @include white-link;
       }
     }
   }
