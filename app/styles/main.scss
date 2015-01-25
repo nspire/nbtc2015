@@ -18,6 +18,9 @@ $montserrat: 'Montserrat', 'Helvetica Neue', sans-serif;
   transition: all $time ease-in-out;
 }
 
+// borders
+$blue-border: 8px solid $light-blue;
+
 // resets
 * { box-sizing: border-box; }
 a { text-decoration: none !important; }
@@ -79,19 +82,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   .about {
     display: flex;
-    background: rgba($main-blue, 0.8);
     .about-left, .about-right {
       display: flex;
     }
     .about-left {
-      justify-content: flex-end;
       align-items: flex-start;
-      min-width: 400px;
       .about-title {
         padding: 2rem 4rem;
         padding-left: 10rem;
         margin-top: 10rem;
-        border-right: 8px solid $light-blue;
+        border-right: $blue-border;
         text-transform: uppercase;
         h1 {
           margin: 0;
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
     .about-right {
-      flex: 2;
+      flex: 1;
       .about-desc {
         padding: 8rem 6rem;
         padding-right: 12rem;
@@ -120,6 +120,49 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contact-center {
+      padding: 8rem 10rem;
+      display: flex;
+      // flex-direction: column-reverse;
+      .contact-left {
+        display: flex;
+        align-items: center;
+        .contact-title {
+          padding: 2rem 4rem;
+          border-right: $blue-border;
+          text-transform: uppercase;
+          h1 {
+            margin: 0;
+            font-size: 6rem;
+          }
+        }
+      }
+      .contact-items {
+        padding: 4rem 2rem;
+        text-align: center;
+        flex: 1;
+        a {
+          display: inline-block;
+          padding: 2rem 1rem;
+          margin: 1rem;
+          color: #fff;
+          border-radius: 0.5rem;
+          background: rgba($link-blue, 0);
+          &:hover {
+            background: $link-blue;
+          }
+          &:active {
+            background: lighten($main-blue, 10%);
+          }
+          @include transition(0.08s);
+        }
+      }
+    }
+  }
 }
 
 // specific components
@@ -128,19 +171,15 @@ h1, h2, h3, h4, h5, h6 {
   a {
     font-family: $montserrat;
     display: inline-block;
-    background: $link-blue;
     color: #fff;
     font-size: 1.3rem;
     font-weight: 400;
     text-transform: uppercase;
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
-    &:hover {
-      background: $logo-blue;
-    }
-    &:active {
-      background: lighten($main-blue, 10%);
-    }
+    background: $link-blue;
+    &:hover { background: $logo-blue; }
+    &:active { background: lighten($main-blue, 10%); }
     i {
       vertical-align: middle;
     }
