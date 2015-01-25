@@ -31,7 +31,7 @@ angular.module('nbtc2015App')
           }
         );
       },
-      oppositeUtil: function (direction) {
+      oppositeUtil: function (direction, position) {
         // return opposite direction as a string
         var opposite;
         switch (direction) {
@@ -40,6 +40,16 @@ angular.module('nbtc2015App')
           case 'left': opposite = 'right'; break;
           case 'right': opposite = 'left'; break;
         }
+
+        // position argument indicates we want a position (top, bottom) instead of direction (up, down)
+        if (position) {
+          if (opposite === 'up') {
+            opposite = 'top';
+          } else if (opposite === 'down') {
+            opposite = 'bottom';
+          }
+        }
+
         return opposite;
       }
     };

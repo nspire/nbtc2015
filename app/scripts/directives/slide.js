@@ -25,7 +25,7 @@ angular.module('nbtc2015App')
 
         // enable any tooltips
         element.tooltip({
-          placement: slideService.oppositeUtil(scope.slide)
+          placement: slideService.oppositeUtil(scope.slide, true)
         });
       }
     };
