@@ -17,6 +17,43 @@ $montserrat: 'Montserrat', 'Helvetica Neue', sans-serif;
 @mixin transition($time) {
   transition: all $time ease-in-out;
 }
+@mixin primary-style {
+  font-family: $montserrat;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.75;
+}
+@mixin button-style {
+  font-family: $montserrat;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background: $link-blue;
+  &:hover { background: $logo-blue; }
+  &:active { background: lighten($main-blue, 10%); }
+  i { vertical-align: middle; }
+  @include transition(0.08s);
+}
+@mixin white-link {
+  color: #fff;
+  @include primary-style;
+  @include transition(0.08s);
+  &:hover {
+    color: $logo-blue;
+  }
+  &:active {
+    color: lighten($main-blue, 10%);
+  }
+}
+
+// borders
+$blue-border: 8px solid $light-blue;
 
 // resets
 * { box-sizing: border-box; }
@@ -58,14 +95,13 @@ h1, h2, h3, h4, h5, h6 {
     .home-logo {}
     .home-details {
       margin-top: 6rem;
-      font-family: $montserrat;
-      font-size: 1.2rem;
-      text-transform: uppercase;
       text-align: center;
+      @include primary-style;
       .datetime, .location {
         margin: 2.5rem 0;
-        letter-spacing: 2px;
-        line-height: 1.75;
+        a {
+          @include white-link;
+        }
       }
       span {
         display: inline-block;
@@ -79,19 +115,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   .about {
     display: flex;
-    background: rgba($main-blue, 0.8);
     .about-left, .about-right {
       display: flex;
     }
     .about-left {
-      justify-content: flex-end;
       align-items: flex-start;
-      min-width: 400px;
       .about-title {
         padding: 2rem 4rem;
         padding-left: 10rem;
         margin-top: 10rem;
-        border-right: 8px solid $light-blue;
+        border-right: $blue-border;
         text-transform: uppercase;
         h1 {
           margin: 0;
@@ -100,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
     .about-right {
-      flex: 2;
+      flex: 1;
       .about-desc {
         padding: 8rem 6rem;
         padding-right: 12rem;
@@ -120,31 +153,64 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 10rem;
+    .contact-center {
+      display: flex;
+      .contact-left, .contact-right {
+        display: flex;
+        align-items: center;
+        padding: 4rem 1rem;
+      }
+      .contact-left {
+        flex: none;
+        .contact-title {
+          padding: 2rem 4rem;
+          border-right: $blue-border;
+          text-transform: uppercase;
+          h1 {
+            margin: 0;
+            font-size: 6rem;
+          }
+        }
+      }
+      .contact-right {
+        flex: 1;
+        a {
+          display: inline-block;
+          padding: 2rem 1rem;
+          margin: 1rem;
+          color: #fff;
+          border-radius: 0.5rem;
+          background: rgba($link-blue, 0);
+          &:hover {
+            background: $link-blue;
+          }
+          &:active {
+            background: lighten($main-blue, 10%);
+          }
+          @include transition(0.08s);
+        }
+      }
+    }
+    .contact-bottom {
+      display: flex;
+      margin-top: 8rem;
+      .contact-email {
+        @include white-link;
+      }
+    }
+  }
 }
-
 // specific components
 .buy-tickets {
   margin-top: 8rem;
   a {
-    font-family: $montserrat;
-    display: inline-block;
-    background: $link-blue;
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 1rem 1.5rem;
-    border-radius: 0.5rem;
-    &:hover {
-      background: $logo-blue;
-    }
-    &:active {
-      background: lighten($main-blue, 10%);
-    }
-    i {
-      vertical-align: middle;
-    }
-    @include transition(0.08s);
+    @include button-style;
   }
 }
 
