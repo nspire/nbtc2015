@@ -17,6 +17,29 @@ $montserrat: 'Montserrat', 'Helvetica Neue', sans-serif;
 @mixin transition($time) {
   transition: all $time ease-in-out;
 }
+@mixin primary-style {
+  font-family: $montserrat;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.75;
+}
+@mixin button-style {
+  font-family: $montserrat;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background: $link-blue;
+  &:hover { background: $logo-blue; }
+  &:active { background: lighten($main-blue, 10%); }
+  i { vertical-align: middle; }
+  @include transition(0.08s);
+}
 
 // borders
 $blue-border: 8px solid $light-blue;
@@ -61,14 +84,10 @@ h1, h2, h3, h4, h5, h6 {
     .home-logo {}
     .home-details {
       margin-top: 6rem;
-      font-family: $montserrat;
-      font-size: 1.2rem;
-      text-transform: uppercase;
       text-align: center;
+      @include primary-style;
       .datetime, .location {
         margin: 2.5rem 0;
-        letter-spacing: 2px;
-        line-height: 1.75;
       }
       span {
         display: inline-block;
@@ -122,15 +141,19 @@ h1, h2, h3, h4, h5, h6 {
   }
   .contact {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 8rem 10rem;
     .contact-center {
-      padding: 8rem 10rem;
       display: flex;
-      // flex-direction: column-reverse;
-      .contact-left {
+      .contact-left, .contact-right {
         display: flex;
         align-items: center;
+        padding: 4rem 1rem;
+      }
+      .contact-left {
+        flex: none;
         .contact-title {
           padding: 2rem 4rem;
           border-right: $blue-border;
@@ -141,9 +164,7 @@ h1, h2, h3, h4, h5, h6 {
           }
         }
       }
-      .contact-items {
-        padding: 4rem 2rem;
-        text-align: center;
+      .contact-right {
         flex: 1;
         a {
           display: inline-block;
@@ -162,28 +183,29 @@ h1, h2, h3, h4, h5, h6 {
         }
       }
     }
+    .contact-bottom {
+      display: flex;
+      margin-top: 8rem;
+      .contact-email {
+        color: #fff;
+        @include primary-style;
+        @include transition(0.08s);
+        &:hover {
+          color: $logo-blue;
+        }
+        &:active {
+          color: lighten($main-blue, 10%);
+        }
+        // @include button-style;
+      }
+    }
   }
 }
-
 // specific components
 .buy-tickets {
   margin-top: 8rem;
   a {
-    font-family: $montserrat;
-    display: inline-block;
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 1rem 1.5rem;
-    border-radius: 0.5rem;
-    background: $link-blue;
-    &:hover { background: $logo-blue; }
-    &:active { background: lighten($main-blue, 10%); }
-    i {
-      vertical-align: middle;
-    }
-    @include transition(0.08s);
+    @include button-style;
   }
 }
 
