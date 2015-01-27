@@ -7,11 +7,21 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 $main-blue: #183E5D;
 $light-blue: #75A5D4;
 $link-blue: #337ab7;
-$logo-blue: #3486C7;
+$logo-blue: #3688CB;
+$dark-blue: #14334C;
 
 // fonts
 $source-sans: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
 $montserrat: 'Montserrat', 'Helvetica Neue', sans-serif;
+
+// borders
+$light-border: 8px solid $light-blue;
+$dark-border: 8px solid $logo-blue;
+
+// buffers
+$side-buffer: 8rem;
+$vertical-buffer: 8rem;
+$center-buffer: 3rem;
 
 // mixins
 @mixin transition($time) {
@@ -52,9 +62,6 @@ $montserrat: 'Montserrat', 'Helvetica Neue', sans-serif;
   }
 }
 
-// borders
-$blue-border: 8px solid $light-blue;
-
 // resets
 * { box-sizing: border-box; }
 a { text-decoration: none !important; }
@@ -64,14 +71,27 @@ html, body {
   height: 100%;
   width: 100%;
   color: #fff;
-  overflow: hidden;
   font-family: $source-sans;
-  background: url('../images/nbtc-landing_bg.jpg') no-repeat center center;
+  background: url('../images/nbtc-landing_bg.jpg') no-repeat fixed center center;
   background-size: cover;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $montserrat;
+}
+
+p {
+  margin: 2rem 0;
+  font-size: 1.75rem;
+  font-weight: 300;
+  &.lead {
+    font-size: 3rem;
+    margin: 0 0 3rem;
+  }
+  strong {
+    font-weight: 600;
+  }
 }
 
 /* main styles */
@@ -86,6 +106,8 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: top;
     height: 100%;
     background: rgba($main-blue, 0.8);
+    overflow: auto;
+    padding: $vertical-buffer $side-buffer;
   }
   .home {
     display: flex;
@@ -95,7 +117,6 @@ h1, h2, h3, h4, h5, h6 {
     .home-logo {}
     .home-details {
       margin-top: 6rem;
-      text-align: center;
       @include primary-style;
       .datetime, .location {
         margin: 2.5rem 0;
@@ -115,41 +136,29 @@ h1, h2, h3, h4, h5, h6 {
   }
   .about {
     display: flex;
+    background: #fff;
+    color: #131313;
     .about-left, .about-right {
       display: flex;
     }
     .about-left {
       align-items: flex-start;
       .about-title {
-        padding: 2rem 4rem;
-        padding-left: 10rem;
-        margin-top: 10rem;
-        border-right: $blue-border;
+        padding: 3rem 0;
+        padding-right: $center-buffer;
+        border-right: $dark-border;
         text-transform: uppercase;
         h1 {
+          color: $logo-blue;
           margin: 0;
-          font-size: 8rem;
+          font-size: 6rem;
         }
       }
     }
     .about-right {
       flex: 1;
       .about-desc {
-        padding: 8rem 6rem;
-        padding-right: 12rem;
-        font-size: 1.75rem;
-        font-weight: 300;
-        overflow: auto;
-        p {
-          margin: 2rem 0;
-          &.lead {
-            font-size: 3rem;
-            margin: 2rem 0 3rem;
-          }
-          strong {
-            font-weight: 600;
-          }
-        }
+        padding-left: $center-buffer;
       }
     }
   }
@@ -158,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8rem 10rem;
+    padding: 8rem $side-buffer;
     .contact-center {
       display: flex;
       .contact-left, .contact-right {
@@ -170,7 +179,8 @@ h1, h2, h3, h4, h5, h6 {
         flex: none;
         .contact-title {
           padding: 2rem 4rem;
-          border-right: $blue-border;
+          border-right: $light-border;
+          border-right: $light-border;
           text-transform: uppercase;
           h1 {
             margin: 0;
@@ -186,9 +196,9 @@ h1, h2, h3, h4, h5, h6 {
           margin: 1rem;
           color: #fff;
           border-radius: 0.5rem;
-          background: rgba($link-blue, 0);
+          background: rgba($logo-blue, 0);
           &:hover {
-            background: $link-blue;
+            background: $logo-blue;
           }
           &:active {
             background: lighten($main-blue, 10%);
@@ -205,10 +215,63 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+  .conference {
+    display: flex;
+    .conference-left, .conference-right {
+      & > :last-child {
+        margin-bottom: $vertical-buffer;
+      }
+    }
+    .conference-left {
+      padding-right: $center-buffer;
+      flex-basis: 48rem;
+      .conference-theme {
+        padding: 4rem 0 5rem;
+        margin-bottom: 5rem;
+        border-top: $light-border;
+        border-bottom: $light-border;
+        white-space: nowrap;
+        h1, h2 {
+          margin: 0;
+          text-transform: uppercase;
+        }
+        h1 {
+          font-size: 5.5rem;
+          letter-spacing: 4px;
+        }
+        h2 {
+          font-size: 1.75rem;
+          font-weight: 400;
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+    .conference-right {
+      flex: 1;
+      padding-left: $center-buffer;
+      .conference-figures {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        .conference-figure {
+          flex-basis: 30%;
+          margin: 2.5rem 0;
+          h3 {
+            font-size: 5rem;
+            margin-top: 0;
+          }
+          h4 {
+            @include primary-style;
+          }
+        }
+      }
+    }
+  }
 }
 // specific components
 .buy-tickets {
-  margin-top: 8rem;
+  margin: 7rem 0;
   a {
     @include button-style;
   }
