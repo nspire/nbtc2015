@@ -9,6 +9,7 @@ $light-blue: #75A5D4;
 $link-blue: #337ab7;
 $logo-blue: #3688CB;
 $dark-blue: #14334C;
+$text-black: #131313;
 
 // fonts
 $source-sans: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
@@ -17,6 +18,10 @@ $montserrat: 'Montserrat', 'Helvetica Neue', sans-serif;
 // borders
 $light-border: 8px solid $light-blue;
 $dark-border: 8px solid $logo-blue;
+$gold-border: 8px solid gold;
+$silver-border: 8px solid silver;
+$bronze-border: 8px solid #CD7F32;
+$black-border: 8px solid $text-black;
 
 // buffers
 $side-buffer: 8rem;
@@ -137,7 +142,7 @@ p {
   .about {
     display: flex;
     background: #fff;
-    color: #131313;
+    color: $text-black;
     .about-left, .about-right {
       display: flex;
     }
@@ -179,7 +184,6 @@ p {
         flex: none;
         .contact-title {
           padding: 2rem 4rem;
-          border-right: $light-border;
           border-right: $light-border;
           text-transform: uppercase;
           h1 {
@@ -266,6 +270,56 @@ p {
           }
         }
       }
+    }
+  }
+  .sponsors {
+    background: #fff;
+    color: $text-black;
+    .sponsors-header {
+      padding: 0 $side-buffer;
+      margin-bottom: 8rem;
+      h1 {
+        display: inline-block;
+        font-size: 6rem;
+        text-transform: uppercase;
+        margin: 0 0 6rem;
+        padding: 2rem 4rem;
+        color: $logo-blue;
+        border: $dark-border;
+      }
+    }
+    .sponsors-class {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      margin-bottom: 2rem;
+      padding: 8rem 0;
+      h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 2rem;
+        text-transform: uppercase;
+      }
+      .sponsors-item {
+        padding: 2rem;
+        margin: 2rem 4rem;
+        img {
+          width: 100%;
+        }
+      }
+      @mixin sponsor-style($color, $logo-size) {
+        border-top: 8px solid $color;
+        h2 { background: $color; }
+        .sponsors-item { width: $logo-size; }
+      }
+      &.gold      { @include sponsor-style(gold,        36rem); }
+      &.silver    { @include sponsor-style(silver,      32rem); }
+      &.bronze    { @include sponsor-style(#CD7F32,     24rem); }
+      &.supporter { @include sponsor-style($logo-blue,  20rem); }
     }
   }
 }
