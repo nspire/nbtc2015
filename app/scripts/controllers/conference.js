@@ -11,8 +11,8 @@ angular.module('nbtc2015App')
   .controller('ConferenceCtrl', function ($scope) {
     $scope.figures = [
       {
-        number: '300',
-        desc: 'ambitious delegates'
+        number: '275',
+        desc: 'delegates'
       },
       {
         number: '18',
@@ -27,7 +27,7 @@ angular.module('nbtc2015App')
         desc: 'professional workshops'
       },
       {
-        number: '24+',
+        number: '45+',
         desc: 'hours of experience'
       },
       {
