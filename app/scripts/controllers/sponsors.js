@@ -13,53 +13,53 @@ angular.module('nbtc2015App')
       gold: [
         {
           url: 'http://www.mbna.ca/',
-          img: 'images/mbna.jpg'
+          img: 'images/sponsors/mbna.jpg'
         }
       ],
       silver: [
         {
           url: 'http://startupsource.ca/',
-          img: 'images/airdberlis.png'
+          img: 'images/sponsors/airdberlis.png'
         },
         {
           url: 'https://uwaterloo.ca/conrad-business-entrepreneurship-technology/',
-          img: 'images/conrad.png'
+          img: 'images/sponsors/conrad.png'
         }
       ],
       bronze: [
         {
           url: 'http://www.peo.on.ca/',
-          img: 'images/peo.png'
+          img: 'images/sponsors/peo.png'
         },
         {
           url: 'http://www.rbc.com/careers/campus-recruitment/technology-operations.html',
-          img: 'images/rbc.png'
+          img: 'images/sponsors/rbc.png'
         },
         {
           url: 'http://www.mckinsey.com/',
-          img: 'images/mckinseyco.png'
+          img: 'images/sponsors/mckinseyco.png'
         },
         {
           url: 'http://www.shopify.ca/',
-          img: 'images/shopify.png'
+          img: 'images/sponsors/shopify.png'
         },
         {
           url: 'http://www.accenture.com/us-en/pages/index.aspx',
-          img: 'images/accenture.gif'
+          img: 'images/sponsors/accenture.gif'
         },
         {
           url: 'http://www.rlsolutions.com/',
-          img: 'images/rl-solutions.jpg'
+          img: 'images/sponsors/rl-solutions.jpg'
         }
       ],
       supporters: [
         {
           url: 'http://sabetaip.com/',
-          img: 'images/sabeta-ip.svg'
+          img: 'images/sponsors/sabeta-ip.svg'
         },
         {
           url: 'http://www.sustainalytics.com/',
-          img: 'images/sustainalytics.jpg'
+          img: 'images/sponsors/sustainalytics.jpg'
         }
       ]
     };

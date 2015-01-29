@@ -1,0 +1,17 @@
+<div class="page-wrapper speakers">
+  <div class="speakers-header">
+    <h1>Speakers</h1>
+    <nav class="speakers-filters">
+      <a ng-mouseenter="filterSpeakers.byRole('workshop')" ng-mouseleave="filterSpeakers.resetRole()"><i class="fa fa-fw fa-2x fa-code"></i><span>Workshop</span></a>
+      <a ng-mouseenter="filterSpeakers.byRole('panelist')" ng-mouseleave="filterSpeakers.resetRole()"><i class="fa fa-fw fa-2x fa-magic"></i><span>Panel</span></a>
+      <a ng-mouseenter="filterSpeakers.byRole('keynote')" ng-mouseleave="filterSpeakers.resetRole()"><i class="fa fa-fw fa-2x fa-lightbulb-o"></i><span>Keynote</span></a>
+    </nav>
+  </div>
+  <div class="speakers-grid" ng-class="[filterClass]">
+    <div class="speaker" ng-class="[speaker.role]" ng-repeat="speaker in speakers" ng-mouseenter="filterSpeakers.byElement($event)" ng-mouseleave="filterSpeakers.resetElement($event)">
+      <img ng-if="speaker.img" ng-src="{{speaker.img}}">
+    </div>
+  </div>
+</div>
+
+<a slide="left" href="#/conference" title="Conference"><i class="fa fa-arrow-circle-o-left fa-2x"></i></a>

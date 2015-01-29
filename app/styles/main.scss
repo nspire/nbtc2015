@@ -173,6 +173,7 @@ p {
     align-items: center;
     justify-content: center;
     padding: 8rem $side-buffer;
+    background: rgba($dark-blue, 0.9);
     .contact-center {
       display: flex;
       .contact-left, .contact-right {
@@ -320,6 +321,84 @@ p {
       &.silver    { @include sponsor-style(silver,      32rem); }
       &.bronze    { @include sponsor-style(#CD7F32,     24rem); }
       &.supporter { @include sponsor-style($logo-blue,  20rem); }
+    }
+  }
+  .speakers {
+    background: rgba($dark-blue, 0.9);
+    .speakers-header {
+      h1 {
+        display: inline-block;
+        font-size: 6rem;
+        text-transform: uppercase;
+        padding: 2rem 4rem;
+        background: $logo-blue;
+        margin: 0;
+      }
+      .speakers-filters {
+        cursor: default;
+        display: inline-block;
+        vertical-align: bottom;
+        padding: 0.5rem 1rem;
+        @include primary-style;
+        a {
+          display: block;
+          cursor: pointer;
+          padding: 0.5rem 0;
+          @include transition(0.1s);
+          span {
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            width: 0;
+            color: #fff;
+            @include transition(0.1s);
+          }
+          &:hover {
+            color: #fff;
+            span {
+              width: 10rem;
+            }
+          }
+          & > * {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    .speakers-grid {
+      font-size: 0;
+      .speaker {
+        display: inline-block;
+        width: 18rem;
+        height: 18rem;
+        overflow: hidden;
+        background: #fff;
+        cursor: pointer;
+        img {
+          width: 100%;
+          min-height: 100%;
+          @include transition(0.08s);
+        }
+      }
+      $filter-opacity: 0.3;
+      &.filter-all {
+        .speaker {
+          img { opacity: $filter-opacity; }
+          &.selected img { opacity: 1; }
+        }
+      }
+      &.filter-keynote {
+        .speaker img { opacity: $filter-opacity; }
+        .keynote img { opacity: 1; }
+      }
+      &.filter-panelist {
+        .speaker img { opacity: $filter-opacity; }
+        .panelist img { opacity: 1; }
+      }
+      &.filter-workshop {
+        .speaker img { opacity: $filter-opacity; }
+        .workshop img { opacity: 1; }
+      }
     }
   }
 }
