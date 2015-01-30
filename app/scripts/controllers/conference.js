@@ -15,28 +15,28 @@ angular.module('nbtc2015App')
         desc: 'delegates'
       },
       {
-        number: '18',
+        number: '20',
         desc: 'world class speakers'
+      },
+      {
+        number: '12',
+        desc: 'professional workshops'
       },
       {
         number: '20+',
         desc: 'prominent sponsors'
       },
       {
-        number: '6',
-        desc: 'professional workshops'
-      },
-      {
-        number: '45+',
-        desc: 'hours of experience'
-      },
-      {
         number: '2',
         desc: 'fierce competitions'
       },
       {
-        number: '$8k',
+        number: '$30k+',
         desc: 'cash prizes'
+      },
+      {
+        number: '45+',
+        desc: 'hours of experience'
       },
       {
         number: '\u221e',
