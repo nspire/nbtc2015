@@ -53,12 +53,12 @@ $center-buffer: 3rem;
   &:hover { background: $logo-blue; }
   &:active { background: lighten($main-blue, 10%); }
   i { vertical-align: middle; }
-  @include transition(0.08s);
+  @include transition(0.1s);
 }
 @mixin white-link {
   color: #fff;
   @include primary-style;
-  @include transition(0.08s);
+  @include transition(0.1s);
   &:hover {
     color: $logo-blue;
   }
@@ -70,6 +70,7 @@ $center-buffer: 3rem;
 // resets
 * { box-sizing: border-box; }
 a { text-decoration: none !important; }
+:focus { outline: none !important; }
 
 // main styles
 html, body {
@@ -399,6 +400,66 @@ p {
         .speaker img { opacity: $filter-opacity; }
         .workshop img { opacity: 1; }
       }
+    }
+  }
+  .blurb {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: ($vertical-buffer * 1.5) ($side-buffer * 1.5);
+    background: rgba($dark-blue, 0.98);
+    overflow: auto;
+    .blurb-left, .blurb-right {
+      &:last-child {
+        margin-bottom: $vertical-buffer;
+      }
+    }
+    .blurb-left {
+      margin-right: $center-buffer;
+      width: 28rem;
+      img {
+        width: 100%;
+      }
+    }
+    .blurb-right {
+      margin-left: $center-buffer;
+      flex: 1;
+      h1 {
+        font-size: 4rem;
+        small {
+          vertical-align: middle;
+        }
+      }
+      h2 {
+        font-size: 1.6rem;
+        margin: 0 0 3rem;
+      }
+    }
+    .blurb-close {
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
+      cursor: pointer;
+    }
+    &.ng-enter, &.ng-leave {
+      transition: all 0.25s ease-in-out;
+    }
+    &.ng-enter, &.ng-leave.ng-leave-active {
+      opacity: 0;
+      top: 10%;
+      left: 10%;
+      height: 80%;
+      width: 80%;
+    }
+    &.ng-leave, &.ng-enter.ng-enter-active {
+      opacity: 1;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
     }
   }
 }

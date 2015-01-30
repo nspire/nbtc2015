@@ -8,10 +8,29 @@
     </nav>
   </div>
   <div class="speakers-grid" ng-class="[filterClass]">
-    <div class="speaker" ng-class="[speaker.role]" ng-repeat="speaker in speakers" ng-mouseenter="filterSpeakers.byElement($event)" ng-mouseleave="filterSpeakers.resetElement($event)">
-      <img ng-if="speaker.img" ng-src="{{speaker.img}}">
+    <div class="speaker" ng-class="[speaker.role]" ng-repeat="speaker in speakers" ng-if="speaker && speaker.img && speaker.blurb && speaker.title" ng-mouseenter="filterSpeakers.byElement($event)" ng-mouseleave="filterSpeakers.resetElement($event)" ng-click="blurb.show(speaker); filterSpeakers.resetElement($event);">
+      <img ng-src="{{speaker.img}}">
     </div>
   </div>
 </div>
 
 <a slide="left" href="#/conference" title="Conference"><i class="fa fa-arrow-circle-o-left fa-2x"></i></a>
+
+<div class="blurb" ng-if="blurb.isOpen">
+  <a class="blurb-close" ng-click="blurb.hide()"><i class="fa fa-2x fa-times"></i></a>
+  <div class="blurb-left">
+    <img ng-src="{{ blurb.content.img }}">
+  </div>
+  <div class="blurb-right">
+    <h1>{{ blurb.content.name }}&nbsp;
+      <small><a ng-if="blurb.content.facebook" ng-href="{{ blurb.content.facebook }}"><i class="fa fa-fw fa-facebook"></i></a>
+      <a ng-if="blurb.content.twitter" ng-href="{{ blurb.content.twitter }}"><i class="fa fa-fw fa-twitter"></i></a>
+      <a ng-if="blurb.content.linkedin" ng-href="{{ blurb.content.linkedin }}"><i class="fa fa-fw fa-linkedin"></i></a>
+      <a ng-if="blurb.content.link" ng-href="{{ blurb.content.link }}"><i class="fa fa-fw fa-link"></i></a></small></h1>
+    <h2>
+      <i class="fa fa-fw fa-chevron-right"></i>
+      {{ blurb.content.title }}&nbsp;
+    </h2>
+    <div class="blurb-body" ng-bind-html="blurb.content.blurb"></div>
+  </div>
+</div>
