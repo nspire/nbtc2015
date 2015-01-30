@@ -79,7 +79,7 @@ html, body {
   font-family: $source-sans;
   background: url('../images/nbtc-landing_bg.jpg') no-repeat fixed center center;
   background-size: cover;
-
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -369,10 +369,10 @@ p {
       font-size: 0;
       .speaker {
         display: inline-block;
-        width: 18rem;
-        height: 18rem;
+        width: 12rem;
+        height: 12rem;
         overflow: hidden;
-        background: #fff;
+        // background: #fff;
         cursor: pointer;
         img {
           width: 100%;
@@ -380,7 +380,7 @@ p {
           @include transition(0.08s);
         }
       }
-      $filter-opacity: 0.3;
+      $filter-opacity: 0.2;
       &.filter-all {
         .speaker {
           img { opacity: $filter-opacity; }
