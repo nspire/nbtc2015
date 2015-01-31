@@ -32,7 +32,7 @@ angular.module('nbtc2015App')
       },
       {
         number: '$30k+',
-        desc: 'cash prizes'
+        desc: 'prizes'
       },
       {
         number: '45+',

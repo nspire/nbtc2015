@@ -1,19 +1,15 @@
 <div class="page-wrapper contact">
   <div class="contact-center">
-    <div class="contact-left">
-      <div class="contact-title">
-        <h1>Connect</h1>
-      </div>
+    <div class="contact-title">
+      <h1>Connect</h1>
     </div>
-    <div class="contact-right">
-      <a ng-repeat="link in connectLinks" ng-href="{{link.url}}">
-        <i ng-class="link.icon" class="fa fa-fw fa-4x"></i>
-      </a>
+    <a class="contact-icon" ng-repeat="link in connectLinks" ng-href="{{link.url}}">
+      <i ng-class="link.icon" class="fa fa-fw fa-4x"></i>
+    </a>
+    <div class="contact-bottom">
+      <a class="contact-email" href="mailto:nbtc@nspire.org">nbtc@nspire.org</a>
     </div>
-  </div>
-  <div class="contact-bottom">
-    <a class="contact-email" href="mailto:nbtc@nspire.org">nbtc@nspire.org</a>
   </div>
 </div>
 
-<a slide="left" href="#/" title="Home"><i class="fa fa-fw fa-caret-left fa-2x"></i></a>
+<a class="slidebutton" slide="left" href="#/" title="Home"><i class="fa fa-fw fa-caret-left fa-2x"></i></a>

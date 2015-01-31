@@ -68,7 +68,11 @@ $center-buffer: 3rem;
 }
 
 // resets
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
 a { text-decoration: none !important; }
 :focus { outline: none !important; }
 
@@ -112,31 +116,33 @@ p {
     vertical-align: top;
     height: 100%;
     background: rgba($main-blue, 0.8);
-    overflow: auto;
     padding: $vertical-buffer $side-buffer;
+    overflow: auto;
   }
   .home {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    .home-logo {}
-    .home-details {
-      margin-top: 6rem;
-      @include primary-style;
-      .datetime, .location {
-        margin: 2.5rem 0;
-        a {
-          @include white-link;
+    .home-content {
+      padding-bottom: 4rem;
+      .home-logo {}
+      .home-details {
+        margin: 6rem 0 8rem;
+        @include primary-style;
+        .datetime, .location {
+          margin: 2.5rem 0;
+          a {
+            @include white-link;
+          }
         }
-      }
-      span {
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 1rem;
-      }
-      i {
-        vertical-align: middle;
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 1rem;
+        }
+        i {
+          vertical-align: middle;
+        }
       }
     }
   }
@@ -144,9 +150,6 @@ p {
     display: flex;
     background: #fff;
     color: $text-black;
-    .about-left, .about-right {
-      display: flex;
-    }
     .about-left {
       align-items: flex-start;
       .about-title {
@@ -165,110 +168,109 @@ p {
       flex: 1;
       .about-desc {
         padding-left: $center-buffer;
+        margin-bottom: $vertical-buffer;
+      }
+      .buy-tickets {
+        margin-top: 8rem;
       }
     }
   }
   .contact {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 8rem $side-buffer;
     background: rgba($dark-blue, 0.9);
     .contact-center {
-      display: flex;
-      .contact-left, .contact-right {
-        display: flex;
-        align-items: center;
-        padding: 4rem 1rem;
-      }
-      .contact-left {
-        flex: none;
-        .contact-title {
-          padding: 2rem 4rem;
-          border-right: $light-border;
-          text-transform: uppercase;
-          h1 {
-            margin: 0;
-            font-size: 6rem;
-          }
-        }
-      }
-      .contact-right {
-        flex: 1;
-        a {
+      .contact-title {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 2rem 4rem;
+        margin-right: $center-buffer;
+        border-right: $light-border;
+        text-transform: uppercase;
+        h1 {
           display: inline-block;
-          padding: 2rem 1rem;
-          margin: 1rem;
-          color: #fff;
-          border-radius: 0.5rem;
-          background: rgba($logo-blue, 0);
-          &:hover {
-            background: $logo-blue;
-          }
-          &:active {
-            background: lighten($main-blue, 10%);
-          }
-          @include transition(0.08s);
+          margin: 0;
+          font-size: 6rem;
         }
       }
-    }
-    .contact-bottom {
-      display: flex;
-      margin-top: 8rem;
-      .contact-email {
-        @include white-link;
+      .contact-icon {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 2rem 1rem;
+        margin-right: 1rem;
+        color: #fff;
+        border-radius: 0.5rem;
+        background: rgba($logo-blue, 0);
+        &:hover {
+          background: $logo-blue;
+        }
+        &:active {
+          background: lighten($main-blue, 10%);
+        }
+        @include transition(0.1s);
+      }
+      .contact-bottom {
+        margin-top: 8rem;
+        text-align: center;
+        .contact-email {
+          @include white-link;
+        }
       }
     }
   }
   .conference {
     display: flex;
-    .conference-left, .conference-right {
-      & > :last-child {
-        margin-bottom: $vertical-buffer;
+    align-items: center;
+    justify-content: center;
+    .conference-content {
+      max-width: 112rem;
+      display: flex;
+      .conference-left, .conference-right {
+        flex: 1;
       }
-    }
-    .conference-left {
-      padding-right: $center-buffer;
-      flex-basis: 48rem;
-      .conference-theme {
-        padding: 4rem 0 5rem;
-        margin-bottom: 5rem;
-        border-top: $light-border;
-        border-bottom: $light-border;
-        white-space: nowrap;
-        h1, h2 {
-          margin: 0;
-          text-transform: uppercase;
-        }
-        h1 {
-          font-size: 5.5rem;
-          letter-spacing: 4px;
-        }
-        h2 {
-          font-size: 1.75rem;
-          font-weight: 400;
-          letter-spacing: 1.5px;
-        }
-      }
-    }
-    .conference-right {
-      flex: 1;
-      padding-left: $center-buffer;
-      .conference-figures {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-        .conference-figure {
-          flex-basis: 30%;
-          margin: 2.5rem 0;
-          h3 {
-            font-size: 5rem;
-            margin-top: 0;
+      .conference-left {
+        padding-right: $center-buffer;
+        min-width: 48rem;
+        .conference-theme {
+          padding: 4rem 0 5rem;
+          margin-bottom: 5rem;
+          border-top: $light-border;
+          border-bottom: $light-border;
+          white-space: nowrap;
+          h1, h2 {
+            margin: 0;
+            text-transform: uppercase;
           }
-          h4 {
-            @include primary-style;
+          h1 {
+            font-size: 5.5rem;
+            letter-spacing: 4px;
+          }
+          h2 {
+            font-size: 1.75rem;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+          }
+        }
+      }
+      .conference-right {
+        .conference-figures {
+          text-align: center;
+          padding: 1rem 0;
+          background: rgba($light-blue, 0.2);
+          .conference-figure {
+            display: inline-block;
+            vertical-align: top;
+            width: 30%;
+            padding: 2.5rem 1rem;
+            h3 {
+              font-size: 4rem;
+              margin-top: 0;
+            }
+            h4 {
+              @include primary-style;
+            }
           }
         }
       }
@@ -291,13 +293,10 @@ p {
       }
     }
     .sponsors-class {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
       position: relative;
       margin-bottom: 2rem;
       padding: 8rem 0;
+      text-align: center;
       h2 {
         position: absolute;
         top: 0;
@@ -307,6 +306,7 @@ p {
         text-transform: uppercase;
       }
       .sponsors-item {
+        display: inline-block;
         padding: 2rem;
         margin: 2rem 4rem;
         img {
@@ -373,12 +373,11 @@ p {
         width: 16rem;
         height: 16rem;
         overflow: hidden;
-        // background: #fff;
         cursor: pointer;
         img {
           width: 100%;
           min-height: 100%;
-          @include transition(0.08s);
+          @include transition(0.1s);
         }
       }
       $filter-opacity: 0.2;
@@ -403,7 +402,6 @@ p {
     }
   }
   .team {
-    // background: rgba($dark-blue, 0.9);
     background: $dark-blue;
     text-align: center;
     h1 {
@@ -417,18 +415,14 @@ p {
     .team-content {
       font-family: $source-sans;
       margin: 8rem 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 0 $side-buffer;
       .team-member {
-        display: flex;
-        flex-basis: 24rem;
-        flex-direction: column;
-        margin: 2rem;
+        display: inline-block;
+        vertical-align: top;
+        width: 24rem;
+        margin: 4rem;
         .team-member-thumb {
-          width: 24rem;
-          height: 24rem;
+          width: 100%;
+          height: 100%;
           img {
             width: 100%;
           }
@@ -511,7 +505,6 @@ p {
 }
 // specific components
 .buy-tickets {
-  margin: 7rem 0;
   a {
     @include button-style;
   }
