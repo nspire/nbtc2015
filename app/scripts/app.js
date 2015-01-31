@@ -45,6 +45,10 @@ angular
         templateUrl: 'views/speakers.html',
         controller: 'SpeakersCtrl'
       })
+      .when('/team', {
+        templateUrl: 'views/team.html',
+        controller: 'TeamCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

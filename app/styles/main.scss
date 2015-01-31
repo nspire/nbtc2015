@@ -402,6 +402,52 @@ p {
       }
     }
   }
+  .team {
+    // background: rgba($dark-blue, 0.9);
+    background: $dark-blue;
+    text-align: center;
+    h1 {
+      display: inline-block;
+      font-size: 6rem;
+      text-transform: uppercase;
+      padding: 2rem 4rem;
+      border: $light-border;
+      margin: 0 0 8rem;
+    }
+    .team-content {
+      font-family: $source-sans;
+      margin: 8rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 0 $side-buffer;
+      .team-member {
+        display: flex;
+        flex-basis: 24rem;
+        flex-direction: column;
+        margin: 2rem;
+        .team-member-thumb {
+          width: 24rem;
+          height: 24rem;
+          img {
+            width: 100%;
+          }
+        }
+        .team-member-info {
+          padding: 1.5rem 0;
+          h3, h4 {
+            margin: 1.5rem 0;
+          }
+          h3 {
+            font-size: 2rem;
+          }
+          h4 {
+            @include primary-style;
+          }
+        }
+      }
+    }
+  }
   .blurb {
     display: flex;
     position: absolute;
