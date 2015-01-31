@@ -20,7 +20,6 @@ angular.module('nbtc2015App')
         // trust blurb html & allow template usage
         if (content && content.blurb && (typeof content.blurb === 'string')) {
           content.blurb = $sce.trustAsHtml(content.blurb);
-          console.log(content.blurb);
         }
         service.content = content ? content : {};
       },

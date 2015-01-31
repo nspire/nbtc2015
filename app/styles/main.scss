@@ -29,8 +29,8 @@ $vertical-buffer: 8rem;
 $center-buffer: 3rem;
 
 // mixins
-@mixin transition($time) {
-  transition: all $time ease-in-out;
+@mixin transition($time, $delay: "") {
+  transition: all $time ease-in-out unquote($delay);
 }
 @mixin primary-style {
   font-family: $montserrat;
@@ -202,12 +202,12 @@ p {
         margin-right: 1rem;
         color: #fff;
         border-radius: 0.5rem;
-        background: rgba($logo-blue, 0);
+        background: rgba($light-blue, 0);
         &:hover {
-          background: $logo-blue;
+          background: rgba($light-blue, 0.2);
         }
         &:active {
-          background: lighten($main-blue, 10%);
+          background: rgba($light-blue, 0.1);
         }
         @include transition(0.1s);
       }
@@ -509,6 +509,95 @@ p {
     @include button-style;
   }
 }
+#menu-button {
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+  background: rgba($logo-blue, 0);
+  border-radius: 0.5rem;
+  @include primary-style;
+  @include transition(0.1s);
+  span {
+    display: inline-block;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    @include transition(0.2s);
+  }
+  &:hover {
+    color: #fff;
+    background: rgba($logo-blue, 1);
+    span {
+      width: 5rem;
+    }
+  }
+  & > * {
+    vertical-align: middle;
+  }
+}
+#mainmenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: $vertical-buffer $side-buffer;
+  background: $dark-blue;
+  text-align: center;
+  overflow: auto;
+  .mainmenu-body {
+    display: inline-block;
+    max-width: 80rem;
+    .mainmenu-item {
+      display: inline-block;
+      width: 12rem;
+      padding: 2rem 1rem;
+      margin: 2rem;
+      border-radius: 0.5rem;
+      background: rgba($light-blue, 0);
+      color: #fff;
+      cursor: pointer;
+      @include transition(0.1s);
+      h2 {
+        @include primary-style;
+        margin: 1rem 0 0;
+      }
+      &:hover {
+        background: rgba($light-blue, 0.2);
+      }
+      &:active {
+        background: rgba($light-blue, 0.1);
+      }
+    }
+  }
+  .mainmenu-close {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    cursor: pointer;
+  }
+  &.ng-enter, &.ng-leave {
+    transition: all 0.25s ease-in-out;
+  }
+  &.ng-enter, &.ng-leave.ng-leave-active {
+    opacity: 0;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+  }
+  &.ng-leave, &.ng-enter.ng-enter-active {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
 
 /* animations */
 .page {
@@ -539,10 +628,6 @@ p {
     &.ng-leave        { left: 0;     }
     &.ng-leave-active { left: -100%; }
   }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
 }
 
 // slide buttons

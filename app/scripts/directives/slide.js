@@ -16,7 +16,6 @@ angular.module('nbtc2015App')
       link: function (scope, element) {
         // slide when clicking
         element.on('click', function () {
-          console.log(document.getElementsByClassName('page'));
           slideService.slide(scope.slide);
         });
 
