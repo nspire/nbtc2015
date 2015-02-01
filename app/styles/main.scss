@@ -15,6 +15,9 @@ $text-black: #131313;
 $source-sans: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
 $montserrat: 'Montserrat', 'Helvetica Neue', sans-serif;
 
+// sizes
+$h1: 6rem;
+
 // borders
 $light-border: 8px solid $light-blue;
 $dark-border: 8px solid $logo-blue;
@@ -104,7 +107,6 @@ p {
   }
 }
 
-/* main styles */
 .page {
   position: absolute;
   width: 100%;
@@ -124,8 +126,12 @@ p {
     align-items: center;
     justify-content: center;
     .home-content {
-      padding-bottom: 4rem;
-      .home-logo {}
+      padding-bottom: 2rem;
+      .home-logo {
+        img {
+          max-width: 100%;
+        }
+      }
       .home-details {
         margin: 6rem 0 8rem;
         @include primary-style;
@@ -153,14 +159,16 @@ p {
     .about-left {
       align-items: flex-start;
       .about-title {
+        text-align: right;
         padding: 3rem 0;
         padding-right: $center-buffer;
+        margin-bottom: 3rem;
         border-right: $dark-border;
         text-transform: uppercase;
         h1 {
           color: $logo-blue;
           margin: 0;
-          font-size: 6rem;
+          font-size: $h1;
         }
       }
     }
@@ -182,6 +190,7 @@ p {
     padding: 8rem $side-buffer;
     background: rgba($dark-blue, 0.9);
     .contact-center {
+      white-space: nowrap;
       .contact-title {
         display: inline-block;
         vertical-align: middle;
@@ -192,14 +201,14 @@ p {
         h1 {
           display: inline-block;
           margin: 0;
-          font-size: 6rem;
+          font-size: $h1;
         }
       }
       .contact-icon {
         display: inline-block;
         vertical-align: middle;
         padding: 2rem 1rem;
-        margin-right: 1rem;
+        margin: 0 1rem;
         color: #fff;
         border-radius: 0.5rem;
         background: rgba($light-blue, 0);
@@ -282,7 +291,7 @@ p {
       color: $text-black;
       h1 {
         display: inline-block;
-        font-size: 6rem;
+        font-size: $h1;
         text-transform: uppercase;
         margin: 0 0 6rem;
         padding: 2rem 4rem;
@@ -307,6 +316,7 @@ p {
         display: inline-block;
         padding: 2rem;
         margin: 2rem 4rem;
+        max-width: 80%;
         img {
           width: 100%;
         }
@@ -325,9 +335,10 @@ p {
   .speakers {
     background: rgba($dark-blue, 0.9);
     .speakers-header {
+      white-space: nowrap;
       h1 {
         display: inline-block;
-        font-size: 6rem;
+        font-size: $h1;
         text-transform: uppercase;
         padding: 2rem 4rem;
         background: $logo-blue;
@@ -368,6 +379,7 @@ p {
       font-size: 0;
       .speaker {
         display: inline-block;
+        vertical-align: top;
         width: 16rem;
         height: 16rem;
         overflow: hidden;
@@ -404,7 +416,7 @@ p {
     text-align: center;
     h1 {
       display: inline-block;
-      font-size: 6rem;
+      font-size: $h1;
       text-transform: uppercase;
       padding: 2rem 4rem;
       border: $light-border;
@@ -458,8 +470,9 @@ p {
     .blurb-left {
       margin-right: $center-buffer;
       width: 28rem;
+      text-align: right;
       img {
-        width: 100%;
+        max-width: 100%;
       }
     }
     .blurb-right {
@@ -644,6 +657,171 @@ $go-btn-buffer: 2.5rem; // space between button and side of viewport
 .tooltip.top .tooltip-arrow    { border-top-color:    $link-blue; }
 .tooltip.right .tooltip-arrow  { border-right-color:  $link-blue; }
 .tooltip.left .tooltip-arrow   { border-left-color:   $link-blue; }
+
+// responsive
+@media (max-width: 1023px) {
+.page {
+  .page-wrapper {
+    padding: 10rem 3rem;
+  }
+  .conference {
+    .conference-content {
+      display: block;
+      .conference-left, .conference-right {
+        padding: 0;
+      }
+      .conference-left {
+        min-width: initial;
+      }
+      .conference-right {
+        margin-bottom: $vertical-buffer;
+      }
+    }
+  }
+  .contact {
+    .contact-center {
+      text-align: center;
+      white-space: normal;
+      .contact-title {
+        display: block;
+        margin: 0;
+        border: none;
+      }
+    }
+  }
+  .blurb {
+    padding: 10rem 3rem;
+  }
+}
+
+#menu-button {
+  background: $logo-blue;
+  color: #fff;
+  span {
+    width: auto !important;
+  }
+}
+#mainmenu {
+  padding: 3rem;
+}
+.go-up, .go-down, .go-left, .go-right { display: none; }
+}
+
+@media (max-width: 699px) {
+  .speakers {
+    .speakers-header {
+      .speakers-filters {
+        display: none;
+      }
+    }
+    .speakers-grid {
+      .speaker {
+        width: 12rem;
+        height: 12rem;
+      }
+    }
+  }
+  .blurb {
+    .blurb-left {
+      margin-right: 0;
+      width: 22rem;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+.page {
+  .about {
+    display: block;
+    .about-left {
+      .about-title {
+        text-align: left;
+        padding: 3rem;
+        border-left: $dark-border;
+        border-right: none;
+      }
+    }
+    .about-right {
+      .about-desc {
+        padding: 0;
+      }
+    }
+  }
+  .blurb {
+    display: block;
+    .blurb-left {
+      margin-right: 0;
+      margin-bottom: 4rem;
+      width: auto;
+      text-align: center;
+    }
+    .blurb-right {
+      margin-left: 0;
+    }
+  }
+}
+}
+
+@media (max-height: 579px) {
+.page {
+  .home {
+    align-items: flex-start;
+  }
+}
+}
+
+@media (max-width: 499px) {
+$h1-small: 4rem;
+.page {
+  .conference {
+    .conference-content {
+      .conference-left {
+        .conference-theme {
+          white-space: normal;
+          h1 {
+            font-size: 3.5rem;
+          }
+          h2 {
+            font-size: 1.25rem;
+          }
+        }
+      }
+      .conference-right {
+        .conference-figures {
+          .conference-figure {
+            width: 40%;
+            padding: 2.5rem 1rem;
+          }
+        }
+      }
+    }
+  }
+  .sponsors {
+    .sponsors-header {
+      padding: 0;
+      h1 {
+        font-size: $h1-small;
+      }
+    }
+  }
+  .contact {
+    .contact-center {
+      .contact-title {
+        h1 {
+          font-size: $h1-small;
+        }
+      }
+    }
+  }
+  .speakers {
+    .speakers-header {
+      h1 {
+        font-size: $h1-small;
+      }
+    }
+  }
+}
+}
 
 // helper classes
 .main-blue  { color: $main-blue;  }
