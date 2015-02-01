@@ -222,8 +222,6 @@ p {
   }
   .conference {
     display: flex;
-    align-items: center;
-    justify-content: center;
     .conference-content {
       max-width: 112rem;
       display: flex;
@@ -234,8 +232,8 @@ p {
         padding-right: $center-buffer;
         min-width: 48rem;
         .conference-theme {
-          padding: 4rem 0 5rem;
-          margin-bottom: 5rem;
+          padding: 3rem 0 4rem;
+          margin-bottom: 4rem;
           border-top: $light-border;
           border-bottom: $light-border;
           white-space: nowrap;

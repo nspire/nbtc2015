@@ -59,7 +59,7 @@ angular.module('nbtc2015App')
             icon: 'fa-users'
           },
           {
-            name: 'Contact',
+            name: 'Connect',
             uri: '#/contact',
             icon: 'fa-comment-o'
           }

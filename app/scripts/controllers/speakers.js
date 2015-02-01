@@ -91,17 +91,6 @@ angular.module('nbtc2015App')
           '<p>He writes on topics of science, culture and city issues for NOW Magazine, the Globe and Mail, Spacing and Yonge Street. He has edited two books and written many academic papers in astronomy, education, entrepreneurship and innovation strategies. He has also appeared on CityTV, the Space Network, CBC, CTV and Talk TV.</p>'
       },
       {
-        name: 'Kathryn Buczko',
-        title: 'Account Executive, Twitter',
-        twitter: 'https://twitter.com/kathrynbuczko',
-        facebook: '',
-        linkedin: '',
-        link: '',
-        role: 'panelist',
-        img: 'images/speakers/Kathryn-Buczko.jpg',
-        blurb: ''
-      },
-      {
         name: 'Macy Kuang',
         title: '',
         twitter: 'https://twitter.com/macykuang',
@@ -156,17 +145,6 @@ angular.module('nbtc2015App')
         role: 'workshop',
         img: 'images/speakers/Sarah-Stockdale.jpg',
         blurb: ''
-      },
-      {
-        name: 'Tom Emrich',
-        title: 'WeAreWearables',
-        twitter: 'https://twitter.com/tomemrich',
-        facebook: '',
-        linkedin: '',
-        link: 'http://www.wearewearables.com/',
-        role: 'keynote',
-        img: 'images/speakers/Tom-Emrich.jpg',
-        blurb: '<p>As a writer, consultant and community builder, Tom Emrich uses his passion for new technologies to act as a catalyst to bring on the future. He founded We Are Wearables, an organization that rallies the tech community together to learn, discuss and celebrate the wearable tech space in order to foster adoption and facilitate innovation. We Are Wearables currently has chapters in Toronto and Chicago. Tom writes regularly about wearables and other emerging technologies for MobileSyrup, BetaKit and Designers of Things. He also works with startups, and large organizations as an advisor and consultant offering assistance on product development, marketing and organizational strategy.</p>'
       }
     ];
 
