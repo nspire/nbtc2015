@@ -276,10 +276,10 @@ p {
   }
   .sponsors {
     background: #fff;
-    color: $text-black;
     .sponsors-header {
       padding: 0 $side-buffer;
       margin-bottom: 8rem;
+      color: $text-black;
       h1 {
         display: inline-block;
         font-size: 6rem;
@@ -448,7 +448,7 @@ p {
     height: 100%;
     width: 100%;
     padding: ($vertical-buffer * 1.5) ($side-buffer * 1.5);
-    background: rgba($dark-blue, 0.98);
+    background: $dark-blue;
     overflow: auto;
     .blurb-left, .blurb-right {
       &:last-child {
@@ -633,10 +633,10 @@ $go-btn-buffer: 2.5rem; // space between button and side of viewport
 .go-up, .go-down, .go-left, .go-right { position: absolute; }
 .go-up, .go-down    { left: 50%; transform: translate(-50%, 0); }
 .go-left, .go-right { top:  50%; transform: translate(0, -50%); }
-.go-up    { top:    $go-btn-buffer; }
-.go-down  { bottom: $go-btn-buffer; }
-.go-left  { left:   $go-btn-buffer; }
-.go-right { right:  $go-btn-buffer; }
+.go-up    { top:    0; padding: 0 10rem; padding-top:    $go-btn-buffer; }
+.go-down  { bottom: 0; padding: 0 10rem; padding-bottom: $go-btn-buffer; }
+.go-left  { left:   0; padding: 10rem 0; padding-left:   $go-btn-buffer; }
+.go-right { right:  0; padding: 10rem 0; padding-right:  $go-btn-buffer; }
 
 // tooltip custom styles
 .tooltip-inner                 { background:          $link-blue; }
