@@ -539,6 +539,13 @@ p {
     width: 0;
     @include transition(0.2s);
   }
+  &.hover {
+    color: #fff;
+    background: rgba($logo-blue, 0.8);
+    span {
+      width: 5rem;
+    }
+  }
   &:hover {
     color: #fff;
     background: rgba($logo-blue, 1);

@@ -45,28 +45,6 @@ angular.module('nbtc2015App')
         blurb: ''
       },
       {
-        name: 'Aron Solomon',
-        title: '',
-        twitter: '',
-        facebook: '',
-        linkedin: '',
-        link: '',
-        role: '',
-        img: 'images/speakers/Aron-Solomon.png',
-        blurb: ''
-      },
-      {
-        name: 'Harvir Bansal',
-        title: '',
-        twitter: '',
-        facebook: '',
-        linkedin: '',
-        link: '',
-        role: '',
-        img: 'images/speakers/Harvir-Bansal.jpg',
-        blurb: ''
-      },
-      {
         name: 'Jean Luc David',
         title: 'API & Development Consultant, TouchTunes',
         twitter: 'https://twitter.com/jldavid',
@@ -92,7 +70,7 @@ angular.module('nbtc2015App')
       },
       {
         name: 'Macy Kuang',
-        title: '',
+        title: 'Founder, Miaomiao Games',
         twitter: 'https://twitter.com/macykuang',
         facebook: '',
         linkedin: '',
@@ -100,17 +78,6 @@ angular.module('nbtc2015App')
         role: 'workshop',
         img: 'images/speakers/Macy-Kuang.jpg',
         blurb: '<p>Macy Kuang is the Founder of Miaomiao Games. She is on the organizing committee for AndroidTO, the annual Android conference, organizer of the first Canadian Google Glass Hackathon, and a regular contributor to the Google Developer Group. Macy participated in the Google Glass Foundry in New York in February 2013 and is now a Google Glass Pioneer, working with developer versions of the hardware and associated APIs.</p>'
-      },
-      {
-        name: 'Marcus Daniels',
-        title: '',
-        twitter: '',
-        facebook: '',
-        linkedin: '',
-        link: '',
-        role: '',
-        img: 'images/speakers/Marcus-Daniels.jpg',
-        blurb: ''
       },
       {
         name: 'Mark Zimmerman',

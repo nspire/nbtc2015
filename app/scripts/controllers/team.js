@@ -37,7 +37,7 @@ angular.module('nbtc2015App')
       },
       {
         name: 'Suyoun Jo',
-        title: 'Director of Competitions',
+        title: 'Director of Entrepreneurship Competition',
         img: 'images/team/suyoun-jo.jpg'
       }
     ];
