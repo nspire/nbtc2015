@@ -69,17 +69,6 @@ angular.module('nbtc2015App')
           '<p>He writes on topics of science, culture and city issues for NOW Magazine, the Globe and Mail, Spacing and Yonge Street. He has edited two books and written many academic papers in astronomy, education, entrepreneurship and innovation strategies. He has also appeared on CityTV, the Space Network, CBC, CTV and Talk TV.</p>'
       },
       {
-        name: 'Macy Kuang',
-        title: 'Founder, Miaomiao Games',
-        twitter: 'https://twitter.com/macykuang',
-        facebook: '',
-        linkedin: '',
-        link: '',
-        role: 'workshop',
-        img: 'images/speakers/Macy-Kuang.jpg',
-        blurb: '<p>Macy Kuang is the Founder of Miaomiao Games. She is on the organizing committee for AndroidTO, the annual Android conference, organizer of the first Canadian Google Glass Hackathon, and a regular contributor to the Google Developer Group. Macy participated in the Google Glass Foundry in New York in February 2013 and is now a Google Glass Pioneer, working with developer versions of the hardware and associated APIs.</p>'
-      },
-      {
         name: 'Mark Zimmerman',
         title: 'Senior Advisor & CIO, MaRS Discovery District',
         twitter: 'https://twitter.com/markzim',

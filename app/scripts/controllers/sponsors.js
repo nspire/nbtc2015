@@ -28,10 +28,6 @@ angular.module('nbtc2015App')
       ],
       bronze: [
         {
-          url: 'http://www.peo.on.ca/',
-          img: 'images/sponsors/peo.png'
-        },
-        {
           url: 'http://www.rbc.com/careers/campus-recruitment/technology-operations.html',
           img: 'images/sponsors/rbc.png'
         },
@@ -53,6 +49,10 @@ angular.module('nbtc2015App')
         }
       ],
       supporters: [
+        {
+          url: 'http://www.peo.on.ca/',
+          img: 'images/sponsors/peo.png'
+        },
         {
           url: 'http://sabetaip.com/',
           img: 'images/sponsors/sabeta-ip.svg'
