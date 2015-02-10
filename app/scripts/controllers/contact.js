@@ -26,5 +26,9 @@ angular.module('nbtc2015App')
         icon: 'fa-linkedin',
         url: 'https://www.linkedin.com/company/nspire-innovation-network'
       },
+      {
+        icon: 'fa-instagram',
+        url: 'http://instagram.com/nspirenetwork'
+      },
     ];
   });
