@@ -8,5 +8,5 @@
  * Controller of the nbtc2015App
  */
 angular.module('nbtc2015App')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function () {
   });

@@ -101,6 +101,17 @@ angular.module('nbtc2015App')
         role: 'workshop',
         img: 'images/speakers/Sarah-Stockdale.jpg',
         blurb: ''
+      },
+      {
+        name: 'Tom Emrich',
+        title: 'WeAreWearables',
+        twitter: 'https://twitter.com/tomemrich',
+        facebook: '',
+        linkedin: '',
+        link: 'http://www.wearewearables.com/',
+        role: 'keynote',
+        img: 'images/speakers/Tom-Emrich.jpg',
+        blurb: '<p>As a writer, consultant and community builder, Tom Emrich uses his passion for new technologies to act as a catalyst to bring on the future. He founded We Are Wearables, an organization that rallies the tech community together to learn, discuss and celebrate the wearable tech space in order to foster adoption and facilitate innovation.  We Are Wearables currently has chapters in Toronto and Chicago. Tom writes regularly about wearables and other emerging technologies for MobileSyrup, BetaKit and Designers of Things. He also works with startups, and large organizations as an advisor and consultant offering assistance on product development, marketing and organizational strategy.</p>'
       }
     ];
 
