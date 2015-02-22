@@ -283,6 +283,34 @@ p {
       }
     }
   }
+  .gic {
+    .logo img {
+      float: left;
+      width:200px;
+      height: 200px;
+      padding: 20px;
+    }
+    a {
+      @include white-link;
+    }
+    .gic-cases {
+      padding-top:30px;
+      border-top:$light-border;
+    }
+    .gicCase {
+      padding: 10px 0px 10px;
+      .moreInfo {
+        display: none;
+      }
+      .readMore {
+        padding-left: 89%;
+      }
+      border-bottom: 2px solid $light-blue;
+    }
+    .gicCase.showInfo .moreInfo{
+      display:block;
+    }
+  }
   .sponsors {
     background: #fff;
     .sponsors-header {

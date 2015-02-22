@@ -49,6 +49,10 @@ angular
         templateUrl: 'views/team.html',
         controller: 'TeamCtrl'
       })
+      .when('/gic', {
+        templateUrl: 'views/gic.html',
+        controller: 'GicCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
