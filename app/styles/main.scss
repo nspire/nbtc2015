@@ -365,9 +365,6 @@ p {
       .ec-caption {
         font-size: 2.5rem;
       }
-      .ec-subtitles{
-
-      }
       .col-md-6 {
         padding-bottom: 15px;
       }
@@ -413,10 +410,19 @@ p {
       padding-bottom: 10px;
       border-bottom: 2px solid $light-blue;
       .judgeName{
-        text-align: right;
+        /*text-align: right;*/
         font-size: 2.5rem;
         a {
-          color:$light-blue;
+          color:#fff;
+          font-size: 2rem;
+          float: right;
+          &:hover{
+            color:$light-blue;
+          }
+        }
+        .judgeJob {
+          padding:5px 0px 5px 0px;
+          font-size: 2rem
         }
       }
       img {
@@ -444,9 +450,16 @@ p {
         padding: 20px;
       }
     }
-    a {
+    #applyLink {
       @include white-link;
       font-size: 3rem;
+    }
+    a.email{
+      color:#fff;
+      font-weight: 600;
+      &:hover{
+        color:$light-blue;
+      }
     }
     .gic-cases {
       padding-top:30px;
@@ -458,8 +471,15 @@ p {
         display: none;
       }
       .readMore {
-        padding-left: 89%;
+        margin-left: 89%;
         cursor: pointer;
+        background: none;
+        color: #fff;
+        border: 1px solid #fff;
+        &:hover{
+          color:$light-blue;
+          border: 1px solid $light-blue;
+        }
       }
       border-bottom: 2px solid $light-blue;
     }
