@@ -284,14 +284,18 @@ p {
     }
   }
   .gic {
-    .logo img {
-      float: left;
-      width:200px;
-      height: 200px;
-      padding: 20px;
+    .logo {
+      padding-bottom: 10px;
+      img {
+        float: left;
+        width:200px;
+        height: 200px;
+        padding: 20px;
+      }
     }
     a {
       @include white-link;
+      font-size: 3rem;
     }
     .gic-cases {
       padding-top:30px;
@@ -304,6 +308,7 @@ p {
       }
       .readMore {
         padding-left: 89%;
+        cursor: pointer;
       }
       border-bottom: 2px solid $light-blue;
     }

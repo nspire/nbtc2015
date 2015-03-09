@@ -53,6 +53,10 @@ angular
         templateUrl: 'views/gic.html',
         controller: 'GicCtrl'
       })
+      .when('/ec', {
+        templateUrl: 'views/ec.html',
+        controller: 'EcCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
