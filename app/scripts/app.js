@@ -57,6 +57,18 @@ angular
         templateUrl: 'views/ec.html',
         controller: 'EcCtrl'
       })
+      .when('/ecJudges', {
+        templateUrl: 'views/ecjudges.html',
+        controller: 'EcjudgesCtrl'
+      })
+      .when('/ecFaq', {
+        templateUrl: 'views/ecfaq.html',
+        controller: 'EcfaqCtrl'
+      })
+      .when('/ecQualify', {
+        templateUrl: 'views/ecqualify.html',
+        controller: 'EcqualifyCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

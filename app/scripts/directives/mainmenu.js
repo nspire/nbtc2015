@@ -44,6 +44,16 @@ angular.module('nbtc2015App')
             icon: 'fa-question'
           },
           {
+            name: 'GIC',
+            uri: '#/gic',
+            icon: 'fa-globe'
+          },
+         {
+            name: 'EC',
+            uri: '#/ec',
+            icon: 'fa-trophy'
+          },
+          {
             name: 'Speakers',
             uri: '#/speakers',
             icon: 'fa-paper-plane-o'

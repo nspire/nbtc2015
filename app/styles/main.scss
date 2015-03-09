@@ -283,7 +283,108 @@ p {
       }
     }
   }
+  .ec {
+    .text-center{
+      text-align: center;
+    }
+    .ec-main {
+      h1 {
+        border:$light-border;
+        padding: 20px;
+      }
+      a {
+        @include white-link;
+        font-size: 3rem;
+      }
+
+    }
+    .ec-caption{
+      text-align: center;
+      line-height: 2;
+      padding: 10px 0px 10px 0px;
+      border-bottom: 4px solid $light-blue;
+      border-top: 4px solid $light-blue;
+    }
+    .ec-subtitle{
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 3rem;
+    }
+    .ec-prizes {
+      text-align: center;
+      .ec-caption {
+        font-size: 2.5rem;
+      }
+      .ec-subtitles{
+
+      }
+      .col-md-6 {
+        padding-bottom: 15px;
+      }
+      ul{
+        padding: 0px;
+        li {
+          list-style-type: none;
+          font-size: 1.75rem;
+          font-weight: 300;
+          padding-left: 10px
+        }
+      }
+    }
+    .ec-how {
+      ol {
+        margin: 2rem 0;
+        font-size: 1.75rem;
+        font-weight: 300;
+        a {
+          @include white-link;
+          font-size: 1.75rem;
+          font-family: $source-sans;
+          font-weight: bold;
+        }
+      }
+
+    }
+    .ec-eligible {
+      padding:20px;
+      border-bottom:2px solid $light-blue; 
+    }
+    .faqs{
+      .faq{
+        .question{
+          font-weight:bold;
+          padding-bottom:0px;
+          margin-bottom: -5px;
+        }
+        padding-bottom: 5px;
+      }
+    }
+    .judge {
+      padding-bottom: 10px;
+      border-bottom: 2px solid $light-blue;
+      .judgeName{
+        text-align: right;
+        font-size: 2.5rem;
+        a {
+          color:$light-blue;
+        }
+      }
+      img {
+        float:left;
+        padding:0px 20px 10px 0px;
+        width:200px;
+      }
+      p {
+        color:#fff;
+        text-align: justify;
+      }
+    }
+  }
   .gic {
+    .gic-main h1 {
+      border:$light-border;
+      padding: 20px;
+    }
     .logo {
       padding-bottom: 10px;
       img {
