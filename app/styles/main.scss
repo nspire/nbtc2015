@@ -322,9 +322,6 @@ p {
       .ec-caption {
         font-size: 2.5rem;
       }
-      .ec-subtitles{
-
-      }
       .col-md-6 {
         padding-bottom: 15px;
       }
@@ -370,10 +367,19 @@ p {
       padding-bottom: 10px;
       border-bottom: 2px solid $light-blue;
       .judgeName{
-        text-align: right;
+        /*text-align: right;*/
         font-size: 2.5rem;
         a {
-          color:$light-blue;
+          color:#fff;
+          font-size: 2rem;
+          float: right;
+          &:hover{
+            color:$light-blue;
+          }
+        }
+        .judgeJob {
+          padding:5px 0px 5px 0px;
+          font-size: 2rem
         }
       }
       img {
