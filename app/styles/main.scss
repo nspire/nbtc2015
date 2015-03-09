@@ -401,9 +401,16 @@ p {
         padding: 20px;
       }
     }
-    a {
+    #applyLink {
       @include white-link;
       font-size: 3rem;
+    }
+    a.email{
+      color:#fff;
+      font-weight: 600;
+      &:hover{
+        color:$light-blue;
+      }
     }
     .gic-cases {
       padding-top:30px;
@@ -415,8 +422,15 @@ p {
         display: none;
       }
       .readMore {
-        padding-left: 89%;
+        margin-left: 89%;
         cursor: pointer;
+        background: none;
+        color: #fff;
+        border: 1px solid #fff;
+        &:hover{
+          color:$light-blue;
+          border: 1px solid $light-blue;
+        }
       }
       border-bottom: 2px solid $light-blue;
     }

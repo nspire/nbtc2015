@@ -18,10 +18,10 @@ angular.module('nbtc2015App')
   		var currentElement=event.currentTarget.parentElement;
   		if($(currentElement).hasClass("showInfo")){
   			$(currentElement).removeClass("showInfo");
-  			$(event.currentTarget).html("Read More &gt &gt");
+  			$(event.currentTarget).html("Read More  &gt&gt");
   		} else {
   			$(currentElement).addClass("showInfo");
-  			$(event.currentTarget).html("&lt &lt Read Less");
+  			$(event.currentTarget).html("&lt&lt  Read Less");
   		}
 
 	}
