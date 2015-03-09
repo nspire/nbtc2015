@@ -152,6 +152,13 @@ p {
       }
     }
   }
+  #ecJudgesButton{
+    display:block;
+    color: $light-blue;
+    &:hover{
+      color: #fff;
+    }
+  }
   .about {
     display: flex;
     background: #fff;
