@@ -290,6 +290,49 @@ p {
       }
     }
   }
+  .subsidies {
+    background: #fff;
+    display:block;
+    .subsidies-content {
+      color: $text-black;
+    }
+    .subsidies-main {
+      text-align:center;
+      h1 {
+        border:$light-border;
+        padding: 20px;
+      }
+      a {
+        @include white-link;
+        font-size: 3rem;
+      }
+    }
+    .subsidies-table-cell {
+      width: 150px;
+      font-size: 1.8rem;
+    }
+    .subsidies-left {
+      .subsidies-title {
+        text-align: left;
+        padding: 3rem 0;
+        padding-right: $center-buffer;
+        margin-bottom: 3rem;
+        border-right: $dark-border;
+        text-transform: uppercase;
+        h1 {
+          color: $logo-blue;
+          margin: 0;
+          font-size: $h1;
+        }
+      }
+    }
+    .subsidies-right {
+      .subsidies-header {
+        padding-left: $center-buffer;
+        margin-bottom: $vertical-buffer;
+      }
+    }
+  }
   .ec {
     .text-center{
       text-align: center;

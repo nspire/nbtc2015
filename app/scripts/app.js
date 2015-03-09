@@ -69,6 +69,10 @@ angular
         templateUrl: 'views/ecqualify.html',
         controller: 'EcqualifyCtrl'
       })
+      .when('/subsidies', {
+        templateUrl: 'views/subsidies.html',
+        controller: 'SubsidiesCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -59,6 +59,11 @@ angular.module('nbtc2015App')
             icon: 'fa-paper-plane-o'
           },
           {
+            name: 'Subsidies',
+            uri: '#/subsidies',
+            icon: 'fa-money'
+          },
+          {
             name: 'Sponsors',
             uri: '#/sponsors',
             icon: 'fa-star-o'
