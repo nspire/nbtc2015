@@ -333,6 +333,28 @@ p {
       }
     }
   }
+  .schedule {
+    .schedule-header {
+      text-align:center;
+      h1 {
+        border:$light-border;
+        padding: 20px;
+      }
+    }
+    .schedule-table {
+      tr {
+        td:first-child {
+          width: 75px;
+          font-size: 1.5rem;
+        }
+        td:nth-child(2) {
+          width: 150px;
+          font-size: 1.5rem;
+        }
+      }
+      
+    }
+  }
   .ec {
     .text-center{
       text-align: center;

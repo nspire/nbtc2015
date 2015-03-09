@@ -44,6 +44,11 @@ angular.module('nbtc2015App')
             icon: 'fa-question'
           },
           {
+            name: 'Schedule',
+            uri: '#/schedule',
+            icon: 'fa-calendar'
+          },
+          {
             name: 'GIC',
             uri: '#/gic',
             icon: 'fa-globe'

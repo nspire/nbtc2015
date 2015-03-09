@@ -73,6 +73,10 @@ angular
         templateUrl: 'views/subsidies.html',
         controller: 'SubsidiesCtrl'
       })
+      .when('/schedule', {
+        templateUrl: 'views/schedule.html',
+        controller: 'ScheduleCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
