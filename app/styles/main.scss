@@ -363,6 +363,7 @@ p {
       h1 {
         border:$light-border;
         padding: 20px;
+        word-wrap:break-word;
       }
       a {
         @include white-link;
@@ -964,6 +965,7 @@ $go-btn-buffer: 2.5rem; // space between button and side of viewport
 
 @media (max-width: 639px) {
 .page {
+
   .about {
     display: block;
     .about-left {
@@ -1002,10 +1004,26 @@ $go-btn-buffer: 2.5rem; // space between button and side of viewport
   }
 }
 }
+@media (max-width: 1150px) {
+  .subsidies {
+    .subsidies-content {
+      .subsidies-left {
+        .subsidies-title {
+            border:none;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 499px) {
 $h1-small: 4rem;
 .page {
+  .ec-main{
+    h1 {
+      font-size: 2rem;
+    }
+  }
   .conference {
     .conference-content {
       .conference-left {
