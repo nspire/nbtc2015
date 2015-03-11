@@ -46,6 +46,10 @@ angular.module('nbtc2015App')
         {
           url: 'http://www.rlsolutions.com/',
           img: 'images/sponsors/rl-solutions.jpg'
+        },
+        {
+          url: 'http://www.ge.com/ca/careers',
+          img: 'images/sponsors/ge.jpg'
         }
       ],
       supporters: [
@@ -60,6 +64,10 @@ angular.module('nbtc2015App')
         {
           url: 'http://www.sustainalytics.com/',
           img: 'images/sponsors/sustainalytics.jpg'
+        },
+        {
+          url: 'http://www.zeitdice.com/',
+          img: 'images/sponsors/zeitdice.png'
         }
       ]
     };

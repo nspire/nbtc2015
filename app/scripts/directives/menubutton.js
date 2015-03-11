@@ -21,10 +21,10 @@ angular.module('nbtc2015App')
         }, 2000);
 
         // un-hover after first click
-        var cleanup = element.on('click', function () {
+        /*var cleanup = element.on('click', function () {
           element.removeClass('hover');
           cleanup();
-        });
+        });*/
       }
     };
   });
