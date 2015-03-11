@@ -770,14 +770,16 @@ p {
     color: #fff;
     background: rgba($logo-blue, 0.8);
     span {
-      width: 5rem;
+      width: 7rem;
+      font-size: 1.8rem;
     }
   }
   &:hover {
     color: #fff;
     background: rgba($logo-blue, 1);
     span {
-      width: 5rem;
+      width: 7rem;
+      font-size: 1.8rem;
     }
   }
   & > * {
