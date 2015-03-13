@@ -65,7 +65,7 @@ angular.module('nbtc2015App')
         link: 'https://www.vanhawks.com/',
         role: 'workshop',
         img: 'images/speakers/Ali-Zahid.jpg',
-        blurb: '<p>Kickstart and crowdfunding campaigns (Top in the country!)</p>'
+        blurb: ''
       },
       {
         name: 'Jean Luc David',

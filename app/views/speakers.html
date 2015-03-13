@@ -8,7 +8,7 @@
     </nav>
   </div>
   <div class="speakers-grid" ng-class="[filterClass]">
-    <div class="speaker" ng-class="[speaker.role]" ng-repeat="speaker in speakers" ng-mouseenter="filterSpeakers.byElement($event)" ng-mouseleave="filterSpeakers.resetElement($event)" ng-click="(speaker.img && speaker.blurb && speaker.title) ? (blurb.show(speaker) && filterSpeakers.resetElement($event)) : false">
+    <div class="speaker" ng-class="[speaker.role]" ng-repeat="speaker in speakers" ng-mouseenter="filterSpeakers.byElement($event)" ng-mouseleave="filterSpeakers.resetElement($event)" ng-click="(speaker.img && speaker.title) ? (blurb.show(speaker) && filterSpeakers.resetElement($event)) : false">
       <img ng-src="{{speaker.img}}">
     </div>
   </div>
