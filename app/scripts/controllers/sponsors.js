@@ -67,7 +67,7 @@ angular.module('nbtc2015App')
         },
         {
           url: 'http://www.eventmobi.com',
-          img: 'images/sponsors/eventmobi.png'
+          img: 'images/sponsors/eventmobi-logo.png'
         },
         {
           url: 'http://www.zeitdice.com/',
