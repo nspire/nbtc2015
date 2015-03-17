@@ -66,12 +66,12 @@ angular.module('nbtc2015App')
           img: 'images/sponsors/sustainalytics.jpg'
         },
         {
-          url: 'http://www.zeitdice.com/',
-          img: 'images/sponsors/zeitdice.png'
-        },
-        {
           url: 'http://www.eventmobi.com',
           img: 'images/sponsors/eventmobi.png'
+        },
+        {
+          url: 'http://www.zeitdice.com/',
+          img: 'images/sponsors/zeitdice.png'
         }
       ]
     };
