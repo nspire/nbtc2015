@@ -45,7 +45,7 @@ angular.module('nbtc2015App')
         },
         {
           url: 'http://www.rlsolutions.com/',
-          img: 'images/sponsors/rlsolutions.jpg'
+          img: 'images/sponsors/rl-solutions.jpg'
         },
         {
           url: 'http://www.ge.com/ca/careers',
