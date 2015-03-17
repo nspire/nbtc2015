@@ -16,13 +16,13 @@ angular.module('nbtc2015App')
     ];
     $scope.toggleInfo = function(event) {
   		var currentElement=event.currentTarget.parentElement;
-  		if($(currentElement).hasClass("showInfo")){
-  			$(currentElement).removeClass("showInfo");
-  			$(event.currentTarget).html("Read More  &gt&gt");
+  		if ($(currentElement).hasClass('showInfo')){
+  			$(currentElement).removeClass('showInfo');
+  			$(event.currentTarget).html('Read More  &gt&gt');
   		} else {
-  			$(currentElement).addClass("showInfo");
-  			$(event.currentTarget).html("&lt&lt  Read Less");
+  			$(currentElement).addClass('showInfo');
+  			$(event.currentTarget).html('&lt&lt  Read Less');
   		}
 
-	}
+    };
   });
