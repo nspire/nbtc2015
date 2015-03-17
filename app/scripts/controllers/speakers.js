@@ -153,20 +153,6 @@ angular.module('nbtc2015App')
           '<p>She is an active advisor and board member of several companies and an active mentor for The Next 36, Jolt Accelerator and IMPACT.</p>'
       },
       {
-        name: 'Jacquelyn Cyr',
-        title: 'Co-founder - R3VOLVED',
-        twitter: 'https://twitter.com/jacquelyncyr',
-        facebook: '',
-        linkedin: 'https://www.linkedin.com/in/jacquelyncyr',
-        link: '',
-        role: 'panelist',
-        img: 'images/speakers/Jacquelyn-Cyr.jpg',
-        blurb: '<p>Jacquelyn Cyr is a serial entrepreneur, go-to-market consultant, and the co-founder of R3VOLVED, which makes fun, planet-friendly school home and office supplies that inspire green action. The R3VOLVED product line launches nationally at Walmart this summer.</p>' +
-          '<p>Jacquelyn started her first business at nineteen and sold her second at twenty. She\'s run ventures in entertainment, consulting, publishing and advertising, and has always been digitally driven. Her award history is heavy with marketing fumes, but she\'s most proud of her ranking spots on the WXN\'s Most Powerful Women: Top 100 list in 2010 and the PROFIT W100 lists in 2010 and 2011. She has worked with clients spanning the globe, including TD Bank, Samsung, Diageo, Coca-Cola, Benefit Cosmetics, Callaway Golf, Sprint, and Carlsberg, among others.</p>' +
-          '<p>Having spent way too many hours in classrooms, Jacquelyn has two proper degrees (BSc in Economics and MBA in Strategy and Marketing), but never quite finished the third - though she resultingly knows an inordinate amount about social network analysis. She teaches with mad enthusiasm at Ryerson University\'s Ted Rogers School of Management and gets crazy excited to share her philosophy that business, at its core, is a creative enterprise.</p>' +
-          '<p>A noted industry speaker, Jacquelyn has also been a business columnist for The Financial Post and PROFIT Magazine. She is rarely happier than when she\'s learning, identifying market gaps, or hanging with her excellent little fam.</p>'
-      },
-      {
         name: 'Avi Pollock',
         title: 'Vice President Innovation & Strategic Planning - RBC',
         twitter: '',
