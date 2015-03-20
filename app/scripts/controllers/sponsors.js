@@ -50,6 +50,14 @@ angular.module('nbtc2015App')
         {
           url: 'http://www.ge.com/ca/careers',
           img: 'images/sponsors/ge.jpg'
+        },
+        {
+          url: 'http://www2.deloitte.com/ca/en.html',
+          img: 'images/sponsors/Deloitte.gif'
+        },
+        {
+          url: 'http://news.communitech.ca/',
+          img: 'images/sponsors/Communitech_CMYK.jpg'
         }
       ],
       supporters: [
@@ -67,11 +75,11 @@ angular.module('nbtc2015App')
         },
         {
           url: 'http://www.eventmobi.com',
-          img: 'images/sponsors/eventmobi.jpg'
+          img: 'images/sponsors/Eventmobi.png'
         },
         {
           url: 'http://www.zeitdice.com/',
-          img: 'images/sponsors/zeitdice.png'
+          img: 'images/sponsors/zeitdice-1.png'
         }
       ]
     };
