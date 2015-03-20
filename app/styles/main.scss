@@ -505,6 +505,18 @@ p {
         }
       }
       border-bottom: 2px solid $light-blue;
+      .gic-company-desc.prizes {
+        h4:first-child{
+          margin-bottom:4rem;
+        }
+        h4 span{
+            margin: 2rem 0;
+            font-size: 1.75rem;
+            font-weight: 300;
+            font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+        }
+
+      }
     }
     .gicCase.showInfo .moreInfo{
       display:block;
