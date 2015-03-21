@@ -80,6 +80,10 @@ angular.module('nbtc2015App')
         {
           url: 'http://www.zeitdice.com/',
           img: 'images/sponsors/zeitdice-1.png'
+        },
+        {
+          url: 'https://helphub.me/',
+          img: 'images/sponsors/helphub.png'
         }
       ]
     };
