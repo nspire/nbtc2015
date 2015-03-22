@@ -147,10 +147,7 @@ angular.module('nbtc2015App')
         link: 'http://sarahprevette.com',
         role: 'keynote',
         img: 'images/speakers/Sarah-Prevette.jpg',
-        blurb: '<p>Sarah is the Co-Founder & Managing Partner at BrandProject - actively making seed stage investments in disruptive consumer products and technology.</p>' +
-          '<p>Most recently, Sarah was the founder of Sprouter.com, an online platform facilitating knowledge exchange between startups and business leaders that was acquired by Postmedia in late 2011. Sarah also built BetaKit.com to showcase the key technology trends that are re-shaping the future - the publication was acquired in 2013.</p>' +
-          '<p>Sarah is frequently in the media and has been profiled by numerous prestigious publications including The Wall Street Journal, Forbes and Wired Magazine. She was named a top entrepreneur in North America by Inc Magazine and Canadian Business named her one of the Top 20 "Power Elite" in the country.</p>' +
-          '<p>She is an active advisor and board member of several companies and an active mentor for The Next 36, Jolt Accelerator and IMPACT.</p>'
+        blurb: '<p>SARAH PREVETTE has a long history of innovative product development. A serial entrepreneur, she was the founder of well-known online properties Sprouter and BetaKit (both of which were acquired) and the co-founder of BrandProject LP – an investment firm that invests in and works with early-stage startups. Inc Magazine named her one of North America’s top entrepreneurs and Canadian Business declared her one of the country’s top 20 “power elite.” She is an active board member of several growing companies and a passionate advocate for meaningful innovation.</p>'
       },
       {
         name: 'Avi Pollock',
