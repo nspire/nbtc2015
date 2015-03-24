@@ -74,7 +74,7 @@ angular.module('nbtc2015App')
         facebook: '',
         linkedin: '',
         link: '',
-        role: 'workshop',
+        role: 'panelist',
         img: 'images/speakers/Jean-Luc-David.jpg',
         blurb: '<p>Jean-Luc is a senior software developer & technology executive, specializing in web, mobile, and wearable technologies such as Google Glass. He’s a team player, having worked at both small startups and large corporations such as Microsoft and Yellow Pages Group Canada.</p>' +
           '<p>Jean-Luc\'s work has been featured on TechCrunch, Engadget, CNN, BetaKit, TechVibes, Wired, Mashable, New York Observer, MSN, Facebook\'s Official Blog, CTV News, CBC News, and the Montreal Gazette. He\'s been a speaker at events around the world, and has written five technical books and dozens of articles for Wiley Publishing, CNET, TechRepublic, and Builder.com.</p>'
@@ -186,6 +186,61 @@ angular.module('nbtc2015App')
         role: 'workshop',
         img: 'images/speakers/Michael-Katchen.png',
         blurb: '<p>Michael Katchen is the founder and CEO of Wealthsimple, Canada\’s fastest growing online investment manager. His vision is to make smart, simple investing accessible to every Canadian, regardless of age or net worth. Michael is an entrepreneur with a passion for investing. Previously, he led marketing at 1000memories, a Silicon Valley-based startup that was acquired by Ancestry.com in 2012. He returned to Toronto in 2013 to work alongside the best minds in the investment industry to launch Wealthsimple. He won his first investment challenge at 12 years old and consulted for financial institutions with McKinsey & Company when he graduated university. He was recently listed as an "Industry Mover" by the Financial Post and one of the 500 people that will define the next 12 months by Askmen.</p>'
+      },
+      {
+        name: 'David Rose',
+        title: 'Associate Director Graduate Programs, Conrad Business, Entrepreneurship & Technology Centre',
+        twitter: '',
+        facebook: '',
+        linkedin: '',
+        link: '',
+        role: 'workshop',
+        img: 'images/speakers/DavidRose.jpg',
+        blurb: '<p>David Rose is the Associate Director Graduate Programs at the University of Waterloo’s Conrad Business, Entrepreneurship & Technology Centre where he also teaches undergraduate courses on commercialization and entrepreneurship. Prior to joining Conrad in 2014 he was a Lecturer in the School of Business & Economics at Wilfrid Laurier University, teaching a variety of marketing and strategy courses. Prior to his university career, David was an entrepreneur and a marketing professional in multiple industries.  Since 2006, he has also worked on his own technology start-up, Listen Corporation. He has a BMath from University of Waterloo and an MBA from Wilfrid Laurier University.</p>'
+      },
+      {
+        name: 'Karin Schmidlin',
+        title: 'Manager, Virtual Incubation Program - Conrad Business, Entrepreneurship and Technology Center',
+        twitter: '',
+        facebook: '',
+        linkedin: '',
+        link: '',
+        role: 'workshop',
+        img: 'images/speakers/KarinSchmidlin.jpg',
+        blurb: '<p>Karin Schmidlin is the manager of the virtual incubation program at the University of Waterloo\'s Conrad Business, Entrepreneurship and Technology Center. She also teaches User Experience (UX) and Applied Leadership at Waterloo’s digital media campus in Stratford. She is a voracious reader, is passionate about teaching and pretty much runs on black coffee.</p>'
+      },
+      {
+        name: 'Margaret Cichosz',
+        title: 'Co-founder & CEO, Apartmint',
+        twitter: '',
+        facebook: '',
+        linkedin: '',
+        link: '',
+        role: 'workshop',
+        img: 'images/speakers/MargaretCichosz.jpg',
+        blurb: '<p>Margaret Cichosz graduated from the University of Waterloo with an undergraduate degree in Political Science and Business Co-op and a Master of Business, Entrepreneurship and Technology. Margaret has experience in management, business development and sales, and has been working in the tech industry for the last 5 years. She previously co-founded a tech startup, raised angel funding and went on to co-found and become the CEO of Apartmint, Canada’s newest housing platform.</p>'
+      },
+      {
+        name: 'Harvir Bansal',
+        title: 'Associate Professor - Conrad Business, Entrepreneurship and Technology Center',
+        twitter: '',
+        facebook: '',
+        linkedin: '',
+        link: '',
+        role: 'workshop',
+        img: 'images/speakers/Harvir-Bansal.jpg',
+        blurb: '<p>Harvir Bansal is an Associate Professor at the Conrad Business, Entrepreneurship and Technology Centre where he teaches Marketing Management and Marketing Strategies for New Technology-based Ventures. He holds a PhD in Marketing and Operations Research from Queen’s University. Harvir also is the Chief Research Officer and Executive VP, Analytics at b3Intelligence.</p>'
+      },
+      {
+        name: 'Ashna Mankotia',
+        title: 'UX Research Assistant - Conrad Business, Entrepreneurship and Technology Center',
+        twitter: '',
+        facebook: '',
+        linkedin: '',
+        link: '',
+        role: 'workshop',
+        img: 'images/speakers/AshnaMankotia.jpg',
+        blurb: '<p>Ashna Mankotia is the UX Research Assistant at Conrad’s virtual incubation program. She is a Global Business and Digital Arts student at the University of Waterloo’s digital media campus in Stratford, passionate about design, marketing and project management in tech spaces. Ashna has worked at the Conrad Centre for a little over a year and loves being in the centre of Waterloo’s growing innovation bubble. One day she hopes to visit every country in the world.</p>'
       }
     ];
 
