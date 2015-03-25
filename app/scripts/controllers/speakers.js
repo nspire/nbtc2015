@@ -241,6 +241,17 @@ angular.module('nbtc2015App')
         role: 'workshop',
         img: 'images/speakers/AshnaMankotia.jpg',
         blurb: '<p>Ashna Mankotia is the UX Research Assistant at Conrad’s virtual incubation program. She is a Global Business and Digital Arts student at the University of Waterloo’s digital media campus in Stratford, passionate about design, marketing and project management in tech spaces. Ashna has worked at the Conrad Centre for a little over a year and loves being in the centre of Waterloo’s growing innovation bubble. One day she hopes to visit every country in the world.</p>'
+      },
+      {
+        name: 'Biswajit Das',
+        title: 'Senior Manager (Consulting), Deloitte',
+        twitter: '',
+        facebook: '',
+        linkedin: 'https://www.linkedin.com/in/bizdas',
+        link: '',
+        role: 'workshop',
+        img: 'images/speakers/BiswajitDas.jpg',
+        blurb: '<p>Biswajit has over 15 years of consulting experience servicing clients in Technology and Innovation. As a Senior Manager in Deloitte’s Technology Strategy practice. He is the Toronto-based leader of Deloitte\'s Outsourcing Advisory Services (OAS), Deloitte Wearables, Deloitte Exponential Technologies and has helped set up Deloitte\'s Office of Innovation.</p>'
       }
     ];
 
