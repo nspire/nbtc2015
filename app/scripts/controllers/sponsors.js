@@ -84,6 +84,10 @@ angular.module('nbtc2015App')
         {
           url: 'https://helphub.me/',
           img: 'images/sponsors/helphub.png'
+        },
+        {
+          url: 'https://www.axiomnetworks.ca/',
+          img: 'images/sponsors/Axiom.png'
         }
       ]
     };
