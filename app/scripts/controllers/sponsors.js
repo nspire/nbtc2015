@@ -65,7 +65,7 @@ angular.module('nbtc2015App')
         },
         {
           url: 'https://www.lighthouselabs.ca/',
-          img: 'images/sponsors/lighthouse-labs.png'
+          img: 'images/sponsors/Lighthouse-Labs.png'
         }
       ],
       supporters: [
