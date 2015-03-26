@@ -252,6 +252,30 @@ angular.module('nbtc2015App')
         role: 'workshop',
         img: 'images/speakers/BiswajitDas.jpg',
         blurb: '<p>Biswajit has over 15 years of consulting experience servicing clients in Technology and Innovation. As a Senior Manager in Deloitte’s Technology Strategy practice. He is the Toronto-based leader of Deloitte\'s Outsourcing Advisory Services (OAS), Deloitte Wearables, Deloitte Exponential Technologies and has helped set up Deloitte\'s Office of Innovation.</p>'
+      },
+      {
+        name: 'Ian Chan',
+        title: 'Partner,  Head of Disruption and Exponential at Deloitte Innovation',
+        twitter: '',
+        facebook: '',
+        linkedin: 'https://ca.linkedin.com/in/ianchandeloitte',
+        link: '',
+        role: 'workshop',
+        img: 'images/speakers/Ian-Chan.jpg',
+        blurb: '<p>Ian Chan brings more than 20 years of international experience in outsourcing, innovation, disruption, foreign exchange payments and technology infrastructure. Ian provides organizations with strategy-to-implementation leadership to optimize business operations and scale globally.</p>' +
+        '<p>Ian is also Head of Disruption & Exponentials for Deloitte Canada’s Innovation practice, exploring current and emerging concepts to help organizations progress with the pace of change. He is at the center of the Innovation Partnership Program (IPP), an alliance with the XPRIZE think tank committed to radical approaches to creating new industries, and Singularity University, which educates leaders in applying exponential technologies to create and support sustainable organizations. He is currently researching the topic of Exponential Organizations and the use of crowdsourcing, Watson, machine to machine, software robots, drones and cloud-first with Fortune 500 companies and governments.</p>'
+      },
+      {
+        name: 'Ian Xiao',
+        title: 'Consultant, Deloitte',
+        twitter: '',
+        facebook: '',
+        linkedin: 'https://www.linkedin.com/in/ianxiao',
+        link: '',
+        role: 'workshop',
+        img: 'images/speakers/Ian-Xiao.jpg',
+        blurb: '<p>Ian Xiao is a Consultant at Deloitte with primary focuses on advanced analytics, lean / agile transformation, and emerging technology. He has been helping clients to tackle business and technology issues around analytics, customer engagement, channel optimization, and fraud detections. In addition, Ian leads rapid prototyping projects at Deloitte’s innovation facility. He experiments emerging concepts and technologies, such as contextual computation, machine learning, machine-to-machine, and wearables, to help clients to better understand the art of possible and seek growth opportunities.</p>' +
+        '<p>Before Ian’s consulting career, he worked at multiple sectors, such as high tech, venture capital, and academic research. Ian is passionate about education, he is constantly looking for innovative ideas to improve and disrupt this space.</p>'
       }
     ];
 

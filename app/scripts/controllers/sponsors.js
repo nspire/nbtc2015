@@ -88,6 +88,10 @@ angular.module('nbtc2015App')
         {
           url: 'https://www.axiomnetworks.ca/',
           img: 'images/sponsors/Axiom.png'
+        },
+        {
+          url: 'https://bitmakerlabs.com/',
+          img: 'images/sponsors/bitmaker-labs.png'
         }
       ]
     };
