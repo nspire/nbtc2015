@@ -96,6 +96,10 @@ angular.module('nbtc2015App')
         {
           url: 'https://bitmakerlabs.com/',
           img: 'images/sponsors/bitmaker-labs.png'
+        },
+        {
+          url: 'http://weme.sh',
+          img: 'images/sponsors/WeMesh.png'
         }
       ]
     };

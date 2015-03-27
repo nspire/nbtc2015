@@ -266,16 +266,26 @@ angular.module('nbtc2015App')
         '<p>Ian is also Head of Disruption & Exponentials for Deloitte Canada’s Innovation practice, exploring current and emerging concepts to help organizations progress with the pace of change. He is at the center of the Innovation Partnership Program (IPP), an alliance with the XPRIZE think tank committed to radical approaches to creating new industries, and Singularity University, which educates leaders in applying exponential technologies to create and support sustainable organizations. He is currently researching the topic of Exponential Organizations and the use of crowdsourcing, Watson, machine to machine, software robots, drones and cloud-first with Fortune 500 companies and governments.</p>'
       },
       {
-        name: 'Ian Xiao',
-        title: 'Consultant, Deloitte',
+        name: 'Adil Riaz',
+        title: 'Manager, Accenture',
         twitter: '',
         facebook: '',
-        linkedin: 'https://www.linkedin.com/in/ianxiao',
+        linkedin: '',
         link: '',
         role: 'workshop',
-        img: 'images/speakers/Ian-Xiao.jpg',
-        blurb: '<p>Ian Xiao is a Consultant at Deloitte with primary focuses on advanced analytics, lean / agile transformation, and emerging technology. He has been helping clients to tackle business and technology issues around analytics, customer engagement, channel optimization, and fraud detections. In addition, Ian leads rapid prototyping projects at Deloitte’s innovation facility. He experiments emerging concepts and technologies, such as contextual computation, machine learning, machine-to-machine, and wearables, to help clients to better understand the art of possible and seek growth opportunities.</p>' +
-        '<p>Before Ian’s consulting career, he worked at multiple sectors, such as high tech, venture capital, and academic research. Ian is passionate about education, he is constantly looking for innovative ideas to improve and disrupt this space.</p>'
+        img: 'images/speakers/Adil-Riaz.png',
+        blurb: '<p>Adil Riaz is a Manager within the Accenture Digital practice. His work spans across multiple industries, supporting a number of strategy and implementation programs. These roles have included Master Data, Customer & Marketing analytics, Social Media strategy, Web Strategy, business case development and program/project management.</p>'
+      },
+      {
+        name: 'Khurram Virani',
+        title: 'Co-founder & Head Instructor, Lighthouse Labs',
+        twitter: '',
+        facebook: '',
+        linkedin: '',
+        link: '',
+        role: 'workshop',
+        img: 'images/speakers/khurram_virani.jpg',
+        blurb: '<p>Khurram has a strong passion for two things: coding and teaching. This is what drove him to co-found and teach at Lighthouse Labs. He is also a Partner and former CTO at Functional Imperative, a boutique software agency which has hired several of his own Lighthouse Labs graduate. In other words, he codes his own lunch, and eats his own dog food.</p>'
       }
     ];
 
