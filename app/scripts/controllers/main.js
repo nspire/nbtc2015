@@ -9,4 +9,5 @@
  */
 angular.module('nbtc2015App')
   .controller('MainCtrl', function () {
+    $location.absUrl() = 'http://nspire.org/nbtc16';
   });
